@@ -54,16 +54,21 @@ export const Meetup = styled.li`
     font-weight: normal;
   }
 
-  time {
-    display: block;
-    color: ${props => (props.avalible ? '#999' : '#fff')};
-    font-size: 14px;
-    font-weight: normal;
-  }
+  aside {
+    display: flex;
+    align-items: center;
 
-  button {
-    margin-left: 5px;
-    border: 0;
-    background: none;
+    time {
+      display: block;
+      color: ${props => (props.avalible ? '#999' : '#fff')};
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    button {
+      margin-left: 5px;
+      border: 0;
+      background: none;
+    }
   }
 `;

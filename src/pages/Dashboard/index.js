@@ -38,10 +38,12 @@ export default function Dashboard() {
         {meetups.map(meetup => (
           <Meetup keyExtractor={item => String(item.id)} past>
             <strong>{meetup.title}</strong>
-            <time>{meetup.date}</time>
-            <button type="button">
-              <MdChevronRight size={24} color="#fff" />
-            </button>
+            <aside>
+              <time>{meetup.date}</time>
+              <button type="button">
+                <MdChevronRight size={24} color="#fff" />
+              </button>
+            </aside>
           </Meetup>
         ))}
       </ul>
