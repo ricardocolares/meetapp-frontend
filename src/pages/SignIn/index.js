@@ -9,8 +9,8 @@ export default function SignIn() {
       <h3>M</h3>
 
       <form>
-        <input type="email" placeholder="Seu-email" />
-        <input type="email" placeholder="Seu-email" />
+        <input type="email" placeholder="Seu e-mail" />
+        <input type="password" placeholder="Sua senha" />
 
         <button type="submit">Acessar</button>
         <Link to="/register">Criar conta gratuita</Link>
