@@ -1,5 +1,5 @@
 import { takeLatest, call, put, all } from 'redux-saga/effects';
-// import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 import api from '~/services/api';
 import { signInSuccess, signFailure } from './actions';
@@ -22,8 +22,7 @@ export function* signIn({ payload }) {
 
     history.push('/dashboard');
   } catch (err) {
-    console.tron.log('Falha na autenticação, verifique seus dados');
-    // toast.error('Falha na autenticação, verifique seus dados');
+    toast.error('Falha na autenticação, verifique seus dados');
     yield put(signFailure());
   }
 }
@@ -36,13 +35,11 @@ export function* signUp({ payload }) {
       name,
       email,
       password,
-      provider: true,
     });
 
     history.push('/');
   } catch (err) {
-    console.tron.log('Falha no cadastro, verifique seus dados!');
-    // toast.error('Falha no cadastro, verifique seus dados!');
+    toast.error('Falha no cadastro, verifique seus dados!');
 
     yield put(signFailure());
   }
