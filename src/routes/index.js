@@ -7,7 +7,6 @@ import SignUp from '~/pages/SignUp';
 
 import Dashboard from '~/pages/Dashboard';
 import Profile from '~/pages/Profile';
-import Subscriptions from '~/pages/Subscriptions';
 
 export default function Routes() {
   return (
@@ -17,7 +16,6 @@ export default function Routes() {
 
       <Route path="/profile" component={Profile} isPrivate />
       <Route path="/dashboard" component={Dashboard} isPrivate />
-      <Route path="/subscriptions" component={Subscriptions} isPrivate />
     </Switch>
   );
 }
