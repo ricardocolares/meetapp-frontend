@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 700px;
+  max-width: 900px;
   margin: 50px auto;
 
   display: flex;
@@ -19,6 +19,7 @@ export const Container = styled.div`
       border-style: none;
       margin-left: 8px;
       color: #fff;
+      text-decoration: none;
     }
 
     strong {
